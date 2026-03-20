@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Clone another repo
         uses: actions/checkout@v4
-        with:
-          owner: your-github-username-or-org
-          repository: master
+        # with:
+        #   owner: your-github-username-or-org
+        #   repository: master
 
       - name: List files
         run: ls -la
