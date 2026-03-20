@@ -13,7 +13,7 @@ jobs:
         uses: GuillaumeFalourd/clone-github-repo-action@v2.3
         with:
           owner: your-github-username-or-org
-          # repository: target-repo-name
+          repository: master
 
       - name: List files
         run: ls -la
