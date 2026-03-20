@@ -14,3 +14,5 @@ jobs:
       run: |
        git clone https://github.com/Ruchitha1230/web_node.git
        ls
+       cd web_node
+       ls
