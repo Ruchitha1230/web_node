@@ -9,11 +9,6 @@ jobs:
   demojob:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone another repo
-        uses: actions/checkout@v4
-        # with:
-        #   owner: your-github-username-or-org
-        #   repository: master
-
-      - name: List files
-        run: ls -la
+      - name: display
+        run: echo "hello world"
+       
