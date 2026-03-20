@@ -5,13 +5,15 @@ on:
   push:
     branches: ["master"]
 
-
 jobs:
   demojob:
     runs-on: ubuntu-latest
     steps:
-    
-    - name: 'cloning repo'
-      uses: GuillaumeFalourd/clone-github-repo-action@v2.3
-    -name: 'listing files'
-      run: ls
+      - name: Clone another repo
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          owner: your-github-username-or-org
+          # repository: target-repo-name
+
+      - name: List files
+        run: ls -la
