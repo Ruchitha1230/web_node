@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 'hello'
-      run: clone https://github.com/Ruchitha1230/web_node.git
+      run: |
+        clone https://github.com/Ruchitha1230/web_node.git
