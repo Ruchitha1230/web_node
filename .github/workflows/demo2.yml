@@ -12,4 +12,4 @@ jobs:
     steps:
     - name: 'hello'
       run: |
-        clone https://github.com/Ruchitha1230/web_node.git
+        git clone https://github.com/Ruchitha1230/web_node.git
