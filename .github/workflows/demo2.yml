@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone another repo
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        uses: actions/checkout@v4
         with:
           owner: your-github-username-or-org
           repository: master
