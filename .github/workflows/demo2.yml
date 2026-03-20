@@ -9,10 +9,15 @@ on:
 jobs:
   demojob:
     runs-on: ubuntu-latest
-    steps:
-    - name: 'hello'
-      run: |
-       git clone https://github.com/Ruchitha1230/web_node.git
-       ls
-       cd web_node
-       ls
+    # steps:
+    # - name: 'hello'
+    #   run: |
+    #    git clone https://github.com/Ruchitha1230/web_node.git
+    #    ls
+    #    cd web_node
+    #    ls
+      steps:
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+      steps:
+        run: ls
+       
