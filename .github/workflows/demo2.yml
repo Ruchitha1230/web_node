@@ -1,0 +1,14 @@
+
+name: my demo
+
+on:
+  push:
+    branches: ["master"]
+
+
+jobs:
+  demojob:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'hello'
+      run: "hello world"
