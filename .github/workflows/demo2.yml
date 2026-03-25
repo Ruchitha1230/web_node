@@ -11,6 +11,8 @@ on:
       - reopened
       - synchronize
   workflow_dispatch: 
+  workflow_run:
+    workflows: Build and Push Docker Image
 jobs:
   demojob:
     runs-on: ubuntu-latest
