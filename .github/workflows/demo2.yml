@@ -10,6 +10,7 @@ on:
       - edited
       - reopened
       - synchronize
+  workflow_dispatch: 
 jobs:
   demojob:
     runs-on: ubuntu-latest
