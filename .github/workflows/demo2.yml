@@ -2,9 +2,14 @@
 name: my demo
 
 on:
-  push:
-    branches: ["master"]
-
+  # push:
+  #   branches: ["master"]
+  pull_request: 
+    types: 
+      - opened
+      - edited
+      - reopened
+      - synchronize
 jobs:
   demojob:
     runs-on: ubuntu-latest
